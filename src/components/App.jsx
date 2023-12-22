@@ -1,11 +1,12 @@
 // import { useState } from 'react'
+import Header from "./Header";
 
 function App() {
   return (
     <>
-    <h1>HI im component of React</h1>
+      <Header text={"The Boys memory game"}/>
     </>
-  )
+  ); 
 }
 
-export default App
+export default App;
