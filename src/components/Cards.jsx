@@ -5,7 +5,11 @@ function Cards({data, receiveId}) {
     <section className="container">
       {data.length !== 0 &&
         data.map((obj) => {
-          return <Card name={obj.name} url={obj.image} key={obj.id} id={obj.id} receiveId={receiveId}/>;
+          return (
+            <div key={obj.id}>
+              <Card name={obj.name} url={obj.image} id={obj.id} className={"flip"} receiveId={receiveId}/>
+            </div>
+          ) 
         })}
     </section>
   );
