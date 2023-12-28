@@ -19,13 +19,13 @@ function App() {
 
   useEffect(() => {
     dataFetch().then((response) => {
-      const random = response.results.slice(0, 12);
-      setData(random);
+      setData(response.results.slice(0, 12));
     });
   }, []);
 
   useEffect(() => {
     setData(() => data.sort((a, b) => Math.random() - 0.5));
+    document.querySelectorAll(".container__card").forEach((el) =>  el.classList.add("flip"));
   }, [arrId, data]);
 
   const receiveId = (value) => {
