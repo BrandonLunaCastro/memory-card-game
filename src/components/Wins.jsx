@@ -1,4 +1,4 @@
-import gift from "../assets/homelander.gif";
+import gift from "../assets/gif.gif";
 function Wins({restartGame}) {
 
   const handleClick = () => {
