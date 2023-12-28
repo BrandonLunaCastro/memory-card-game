@@ -24,8 +24,16 @@ function App() {
   }, []);
 
   useEffect(() => {
-    setData(() => data.sort((a, b) => Math.random() - 0.5));
-    document.querySelectorAll(".container__card").forEach((el) =>  el.classList.add("flip"));
+    setData(data.sort((a, b) => Math.random() - 0.5));
+    document
+      .querySelectorAll(".container__card")
+      .forEach((el) => {
+        el.classList.add("flip")
+        el.addEventListener("animationend", () => {
+          el.classList.remove("flip")
+        })
+      
+      });
   }, [arrId, data]);
 
   const receiveId = (value) => {
@@ -55,8 +63,10 @@ function App() {
         <Wins restartGame={restartGame} />
       )}
       <Header text={"The Boys memory game"} />
-      <Counter current={currentScore} best={bestScore} />
-      <Cards data={data} receiveId={receiveId} />
+      <main>
+        <Counter current={currentScore} best={bestScore} />
+        <Cards data={data} receiveId={receiveId} />
+      </main>
     </>
   );
 }
