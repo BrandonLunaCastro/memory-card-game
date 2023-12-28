@@ -2,7 +2,7 @@ function Header({text}) {
   return (
     <header>
       <h1>{text}</h1>
-      <a href="https://github.com/BrandonLunaCastro?tab=repositories" target="_blank" rel="noreferrer">
+      <a href="https://github.com/BrandonLunaCastro/memory-card-game" target="_blank" rel="noreferrer">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           height="70"
