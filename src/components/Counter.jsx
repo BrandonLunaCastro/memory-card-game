@@ -1,6 +1,6 @@
 function Counter({current, best}) {
   return (
-    <section>
+    <section className="counter">
       <p>Current Score: {current}</p>
       <p>Best score: {best}</p>
     </section>
