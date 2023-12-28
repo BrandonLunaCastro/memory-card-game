@@ -1,0 +1,12 @@
+.counter {
+    display: block;
+    margin: 0px auto;
+    background-color: var(--main-color);
+    color: var(--third-color);
+    width: fit-content;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--main-color);
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
