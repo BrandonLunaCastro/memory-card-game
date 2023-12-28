@@ -5,8 +5,8 @@ function Header({text}) {
       <a href="https://github.com/BrandonLunaCastro?tab=repositories" target="_blank" rel="noreferrer">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          height="100"
-          width="100"
+          height="70"
+          width="70"
           viewBox="0 0 480 512"
         >
           <path
